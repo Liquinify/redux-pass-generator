@@ -1,0 +1,84 @@
+@use '../modules/colors';
+
+.pass-generator {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 22.5rem;
+    background-color: colors.$purple;
+    border-radius: 10px;
+
+    &__title {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        color: colors.$white;
+    }
+
+    &__result {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: .3rem;
+        padding-left: .3rem;
+        padding-top: 1rem;
+        width: 84%;
+        height: 2.5rem;
+        background-color: colors.$white;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    &__password {
+        padding-bottom: .1rem;
+        font-size: 1.3rem;
+    }
+
+    &__btn {
+        height: 1.9rem;
+        width: 2rem;
+        margin-right: 0.3rem;
+        cursor: pointer;
+        border: none;
+        background-color: colors.$dark-blue;
+    }
+
+    &__img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    &__options {
+        color: colors.$white;
+    }
+
+    &__length {
+        width: 4rem;
+    }
+
+    &__setting {
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2rem;
+    }
+
+    &__create {
+        width: 90%;
+        height: 2rem;
+        margin-top: 2rem;
+        position: absolute;
+        left: 4.6%; 
+        background-color: colors.$dark-blue;
+        color: colors.$white;
+    }
+}
+
+@media (max-width:500px)  { 
+    .pass-generator {
+        width: 95%;
+    }
+}

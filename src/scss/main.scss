@@ -1,0 +1,14 @@
+@use './modules/colors';
+@use './partials/container';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: colors.$dark-blue;
+    padding: 1rem;
+}
