@@ -1,4 +1,4 @@
-@use '../modules/colors';
+@use '../modules/colors' as *;
 
 .pass-generator {
     position: absolute;
@@ -7,14 +7,15 @@
     transform: translate(-50%, -50%);
     width: 25rem;
     height: 22.5rem;
-    background-color: colors.$purple;
-    border-radius: 10px;
+    background-color: $purple;
+    border-radius: 7px;
+
 
     &__title {
         text-align: center;
         padding-top: 1rem;
         font-size: 1.5rem;
-        color: colors.$white;
+        color: $white;
     }
 
     &__result {
@@ -26,7 +27,7 @@
         padding-top: 1rem;
         width: 84%;
         height: 2.5rem;
-        background-color: colors.$white;
+        background-color: $white;
         margin-top: 1rem;
         margin-left: 2rem;
     }
@@ -42,7 +43,7 @@
         margin-right: 0.3rem;
         cursor: pointer;
         border: none;
-        background-color: colors.$dark-blue;
+        background-color: $dark-blue;
     }
 
     &__img {
@@ -51,7 +52,7 @@
     }
 
     &__options {
-        color: colors.$white;
+        color: $white;
     }
 
     &__length {
@@ -72,8 +73,8 @@
         margin-top: 2rem;
         position: absolute;
         left: 4.6%; 
-        background-color: colors.$dark-blue;
-        color: colors.$white;
+        background-color: $dark-blue;
+        color: $white;
     }
 }
 
